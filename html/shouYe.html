@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        .head{
+            width: 100%;
+             height: 45px; 
+           border-bottom: 1px solid rgb(248, 230, 230); 
+           position: relative;
+        }
+        .head h3{
+            margin-left: 10%;
+            color: crimson;
+            font-weight: 500;
+            display: inline;
+        }
+        .head li{
+            list-style-type: none;
+            display: inline;
+        }
+        
+        .head li a{
+            text-decoration: none;
+            color: black;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        .head input{
+            position: absolute;
+            right: 25%;
+            top: 0%;
+            height: 25px;
+            
+        }
+        .head button{
+            position: absolute;
+            right: 21.4%;
+            top: 0%;
+            height: 31px;
+        }
+        .head .private{
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: 15%;
+            top: 0%;
+        }
+        .content{
+            position: relative;
+            width: 100%;
+        }
+        .content .lcontent{
+            position: absolute;
+            width: 60%;
+            height: 600px;
+             /* background-color: rgb(150, 90, 90); */ 
+        }
+        /* .content .rcontent{
+            position: absolute;
+            width: 40%;
+            background-color: rgb(211, 20, 20);
+        } */
+        .content .lcontent1 h3{
+            position: absolute;
+            top: 10px;
+            left: 21%;
+            color: crimson;
+            font-size: 25px;
+        }
+        .content .lcontent1 #all{
+            position: absolute;
+            top:50px;
+            right: 5%;
+            font-size: 15px;
+            color: crimson;
+        }
+        .content .lcontent1 .imgg{
+            position: absolute;
+            top:80px;
+            left: 21%;
+        }
+        .content .lcontent1 .imgg  img{
+            width: 20%;
+            margin-right: 3%;
+           
+        }
+       
+        .movies{
+             display: inline; 
+           height: 100px;
+           line-height: 100px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .movies span{
+            position: absolute;
+            top: -45px;
+            left: 10px;
+            color: white;
+
+        }
+        .movies #pf{
+            display: inline;
+            position: absolute;
+            top: -45px;
+            right: 35px;
+            color: orange;
+        }
+        .movies button{
+            position: absolute;
+            top: -3px;
+            right: 25px;
+            margin-top: 20px;
+            width: 86%;
+            color: crimson;
+            height: 30px;
+            background-color: #fff;
+            border: rgb(224, 220, 220) 1px solid;
+        }
+        .movies #idd{
+            width: 87%;
+            left: 0%;
+        }
+
+        .content .lcontent2{
+            margin-top: 100px;
+            position: absolute;
+            top: 500px;
+            left: 190px;
+             /* background-color: rgb(150, 90, 90);  */
+        }
+        .content .lcontent2 h3{ 
+            color: rgb(58, 151, 212);
+            font-size: 25px;
+        }
+        .lcontent2 #all{
+            position: absolute;
+            top: 35px;
+            left: 625px;
+            font-size: 15px;
+            color: rgb(58, 151, 212);
+        }
+        .content .lcontent2 .im  img{
+            width: 20%;
+            margin-right: 3%;
+           
+        }
+        .movie{
+             display: inline; 
+            position: relative;
+            margin-bottom: 20px;
+            height: 250px;
+           line-height: 250px;
+            
+        }
+        .movie span{
+            position: absolute;
+            left: 5px;
+            top: -95px;
+            color: white;
+        }
+        .movie button{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            margin-top: 18px;
+            width: 85%;
+            color: crimson;
+            
+            background-color: #fff;
+            border: rgb(224, 220, 220) 1px solid;
+        }
+        .movie #xk{
+            border-bottom: solid 1px  rgb(192, 186, 186);
+            color: orange;
+            padding-bottom: 3px;
+            padding-top:5px ;
+        }
+        .movie #yg{
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top:5px ;
+            padding-bottom: 5px;
+            float: left;
+            border-right: 1px solid rgb(192, 186, 186);
+            color: rgb(192, 186, 186);
+        }
+        .movie #ys{
+            padding-top:5px ;
+            padding-bottom: 5px;
+            color:rgb(58, 151, 212);
+        }
+        .movie #sy{
+            padding-top:5px ;
+            border-top: 1px solid rgb(192, 186, 186);
+            padding-bottom: 5px;
+            color: rgb(192, 186, 186);
+        }
+       .content .lcontent3{
+           position: absolute;
+           top: 1330px;
+           left: 190px;
+       }
+       .content .lcontent3 h3{
+           font-size: 25px;
+           color: crimson;
+           
+           
+       }
+       .content .lcontent3 .list{
+           position: relative;
+            left: 130px;
+            top: -47px;
+           
+       }
+       .content .lcontent3 .list span a{
+           text-decoration: none;
+           color: black;
+       }
+
+       .imm .movis img{
+        width: 20%;
+            margin-right: 3%;
+       }
+       .movis{
+             display: inline; 
+           height: 100px;
+           line-height: 100px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .movis span{
+            position: absolute;
+            top: -45px;
+            left: 10px;
+            color: white;
+
+        }
+        .movis #pf{
+            display: inline;
+            position: absolute;
+            top: -45px;
+            right: 35px;
+            color: orange;
+        }
+        .movis button{
+            position: absolute;
+            top: -3px;
+            right: 25px;
+            margin-top: 20px;
+            width: 86%;
+            color: crimson;
+            height: 30px;
+            background-color: #fff;
+            border: rgb(224, 220, 220) 1px solid;
+        }
+        .movis #idd{
+            width: 87%;
+            left: 0%;
+        }
+        .rcontent{
+            position: absolute;
+            left: 60%;
+            width: 40%;
+            height: 600px;
+        }
+        .rcontent .rcontent1{
+            position: absolute;
+            left: 10%;
+            top: 8px;
+            width: 80%;
+            
+        }
+        .rcontent .rcontent1 h3{
+            font-size: 25px;
+           color: crimson;
+        }
+        .rcontent .rcontent1 .su9{
+           position: absolute;
+           width: 80%;
+             border: 1px solid rgb(238, 233, 233); 
+           height: 80px;
+        }
+        
+        .rcontent .rcontent1 .su9 #su1{
+            position: absolute;
+            top: 20px;
+            left: 35%;
+            font-size: 20px;
+        }
+        .rcontent .rcontent1 .su9 #su2{
+            position: absolute;
+            top: 50px;
+            left: 35%;
+            color: crimson;
+        }
+        .rcontent .rcontent1 .su9:hover{
+            background-color: rgb(241, 241, 241);
+        }
+        .rcontent .rcontent1 .listt1{
+            position: absolute;
+            width: 100%;
+            top: 190px;
+        }
+
+        .rcontent .rcontent1 .listt2{
+            position: absolute;
+            width: 100%;
+            top: 230px;
+        }
+.rcontent .rcontent1 .listt3{
+            position: absolute;
+            width: 100%;
+            top: 270px;
+        }
+
+        .rcontent .rcontent1 .listt4{
+            position: absolute;
+            width: 100%;
+            top: 310px;
+        }
+         #pm{
+            color: orange;
+            font-size: 25px;
+        }
+         #name{
+            position: absolute;
+            top: 8px;
+            left:40px;
+        }
+         #wan{
+            position: absolute;
+            right: 30%;
+            top: 8px;
+            color: orange;
+        }
+        .rcontent .rcontent2 .su9{
+           position: absolute;
+           width: 80%;
+             border: 1px solid rgb(238, 233, 233); 
+           height: 80px;
+        }
+        
+        .rcontent .rcontent2 .su9 #su1{
+            position: absolute;
+            top: 20px;
+            left: 35%;
+            font-size: 20px;
+        }
+        .rcontent .rcontent2 .su9 #su2{
+            position: absolute;
+            top: 50px;
+            left: 35%;
+            color: crimson;
+        }
+        .rcontent .rcontent2 .su9:hover{
+            background-color: rgb(241, 241, 241);
+        }
+        .rcontent .rcontent2{
+            position: absolute;
+            left: 10%;
+            top: 380px;
+            width: 80%;
+            
+        }
+        .rcontent .rcontent2 h3{
+            font-size: 25px;
+           color: crimson;
+        }
+        #pmm{
+            color: orange;
+            font-size: 25px;
+        }
+         #namme{
+            position: absolute;
+            top: 8px;
+            left:40px;
+        }
+         #wann{
+            position: absolute;
+            right: 30%;
+            top: 8px;
+            color: orange;
+        }
+        .rcontent .rcontent2 .listt1{
+            position: absolute;
+            width: 100%;
+            top: 190px;
+        }
+
+        .rcontent .rcontent2 .listt2{
+            position: absolute;
+            width: 100%;
+            top: 230px;
+        }
+.rcontent .rcontent2 .listt3{
+            position: absolute;
+            width: 100%;
+            top: 270px;
+        }
+
+        .rcontent .rcontent2 .listt4{
+            position: absolute;
+            width: 100%;
+            top: 310px;
+        }  
+        .rcontent .rcontent3{
+            position: absolute;
+            left: 10%;
+            top: 780px;
+            width: 80%;
+            
+        }
+        .rcontent .rcontent3 h3{
+            font-size: 25px;
+           color: orange;
+        }
+        .rcontent .rcontent3 .su9{
+           position: absolute;
+           width: 80%;
+             border: 1px solid rgb(238, 233, 233); 
+           height: 80px;
+        }
+        
+        .rcontent .rcontent3 .su9 #su1{
+            position: absolute;
+            top: 20px;
+            left: 35%;
+            font-size: 20px;
+        }
+        .rcontent .rcontent3 .su9 #su2{
+            position: absolute;
+            top: 50px;
+            left: 35%;
+            color: crimson;
+        }
+        .rcontent .rcontent3 .su9:hover{
+            background-color: rgb(241, 241, 241);
+        }
+        #pmmm{
+            color: rgb(201, 200, 200);
+            font-size: 25px;
+        }
+         #namme{
+            position: absolute;
+            top: 8px;
+            left:40px;
+        }
+         #wann{
+            position: absolute;
+            right: 30%;
+            top: 8px;
+            color: orange;
+        }
+        .rcontent .rcontent3 .listt1{
+            position: absolute;
+            width: 100%;
+            top: 190px;
+        }
+
+        .rcontent .rcontent3 .listt2{
+            position: absolute;
+            width: 100%;
+            top: 230px;
+        }
+    .rcontent .rcontent3 .listt3{
+            position: absolute;
+            width: 100%;
+            top: 270px;
+        }
+
+        .rcontent .rcontent3 .listt4{
+            position: absolute;
+            width: 100%;
+            top: 310px;
+        }
+        .rcontent .rcontent3 .listt5{
+            position: absolute;
+            width: 100%;
+            top: 350px;
+        }
+        .rcontent .rcontent3 .listt6{
+            position: absolute;
+            width: 100%;
+            top: 390px;
+        }
+        .rcontent .rcontent3 .listt7{
+            position: absolute;
+            width: 100%;
+            top: 430px;
+        }
+        .rcontent .rcontent3 .listt8{
+            position: absolute;
+            width: 100%;
+            top: 470px;
+        }
+        .rcontent .rcontent3 .listt9{
+            position: absolute;
+            width: 100%;
+            top: 510px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        
+        <ul>
+            <h3>猫眼电影</h3>
+            <li id="red"><a href="#">首页</a></li>
+            <li ><a href="#">电影</a></li>
+            <li ><a href="#">影院</a></li>
+            <li ><a href="#">演出</a></li>
+            <li ><a href="#">榜单</a></li> 
+        </ul>
+        <input type="text" placeholder="找影视剧、影人、影院" name="" id="" value="" />
+        <button>搜索</button>
+        <div class="private"><img src="../static/image/boy.png" alt="" style="width: 35px;"></div>
+    </div>
+    <div class="content">
+        <div class="lcontent">
+            <div class="lcontent1">
+                <h3>正在热映（53部）</h3>
+                <span id="all">全部></span>
+                <div class="imgg">
+                        <div class="movis">
+                            <img src="../static/image/01.png" alt="">
+                            <span>你好李焕英</span>
+                            <div id="pf">7.9</div>
+                            <button >购票</button>
+                        </div>
+                        
+                        <div class="movis">
+                            <img src="../static/image/02.png" alt="">
+                            <span>人潮汹涌</span>
+                            <div id="pf">7.9</div>
+                            <button >购票</button>
+                        </div>
+                        <div class="movis">
+                            <img src="../static/image/03.png" alt="">
+                            <span>第十一回</span>
+                            <div id="pf">7.9</div>
+                            <button >购票</button>
+                        </div>
+                        <div class="movis">
+                            <img src="../static/image/04.png" alt="">
+                            <span>唐人街探案3</span>
+                            <div id="pf">7.9</div>
+                            <button id="idd">购票</button>
+                        </div>
+                        <div class="movis">
+                            <img src="../static/image/05.png" alt="">
+                            <span>波斯语课</span>
+                            <div id="pf">7.9</div>
+                            <button >购票</button>
+                        </div>
+                        <div class="movis">
+                            <img src="../static/image/06.png" alt="">
+                            <span>哥斯拉大战金刚</span>
+                            <div id="pf">7.9</div>
+                            <button >购票</button>
+                        </div>
+                        <div class="movis">
+                            <img src="../static/image/06.png" alt="">
+                            <span>哥斯拉大战金刚</span>
+                            <div id="pf">7.9</div>
+                            <button >购票</button>
+                        </div>
+                        <div class="movis">
+                            <img src="../static/image/06.png" alt="">
+                            <span>哥斯拉大战金刚</span>
+                            <div id="pf">7.9</div>
+                            <button id="idd">购票</button>
+                        </div>   
+                </div>
+            </div>
+            <div class="lcontent2">
+                <h3>即将上映（102部）</h3>
+                <span id="all">全部></span>
+                <div class="im">
+                    <div class="movie">
+                        <img src="../static/image/01.png" alt="">
+                        <span>你好李焕英</span>
+                        <button>
+                            <div id="xk">949人想看</div>
+                            <div id="yg">预告片</div>
+                            <div id="ys">预售</div>
+                            <div id="sy">5月27日上映</div>
+                        </button>
+                        <!-- <button>949人想看<br><span>预告片</span><span>预售</span></button> -->
+                    </div>
+                    
+                    <div class="movie">
+                        <img src="../static/image/02.png" alt="">
+                        <span>人潮汹涌</span>
+                        <button>
+                            <div id="xk">949人想看</div>
+                            <div id="yg">预告片</div>
+                            <div id="ys">预售</div>
+                            <div id="sy">5月27日上映</div>
+                        </button>
+                        
+                    </div>
+                    <div class="movie">
+                        <img src="../static/image/03.png" alt="">
+                        <span>第十一回</span>
+                        <button>
+                            <div id="xk">949人想看</div>
+                            <div id="yg">预告片</div>
+                            <div id="ys">预售</div>
+                            <div id="sy">5月27日上映</div>
+                        </button>
+                        
+                    </div>
+                    <div class="movie">
+                        <img src="../static/image/04.png" alt="">
+                        <span>唐人街探案3</span>
+                        
+                        <button>
+                            <div id="xk">949人想看</div>
+                            <div id="yg">预告片</div>
+                            <div id="ys">预售</div>
+                            <div id="sy">5月27日上映</div>
+                        </button>
+                    </div>
+                    <div class="movie">
+                        <img src="../static/image/05.png" alt="">
+                        <span>波斯语课</span>
+                        <button>
+                            <div id="xk">949人想看</div>
+                            <div id="yg">预告片</div>
+                            <div id="ys">预售</div>
+                            <div id="sy">5月27日上映</div>
+                        </button>
+                        
+                    </div>
+                    <div class="movie">
+                        <img src="../static/image/06.png" alt="">
+                        <span>哥斯拉大战金刚</span>
+                        <button>
+                            <div id="xk">949人想看</div>
+                            <div id="yg">预告片</div>
+                            <div id="ys">预售</div>
+                            <div id="sy">5月27日上映</div>
+                        </button>
+
+                    </div>
+                    <div class="movie">
+                        <img src="../static/image/06.png" alt="">
+                        <span>哥斯拉大战金刚</span>
+                        
+                        <button>
+                            <div id="xk">949人想看</div>
+                            <div id="yg">预告片</div>
+                            <div id="ys">预售</div>
+                            <div id="sy">5月27日上映</div>
+                        </button>
+                    </div>
+                    <div class="movie">
+                        <img src="../static/image/06.png" alt="">
+                        <span>哥斯拉大战金刚</span>
+                        <button>
+                            <div id="xk">949人想看</div>
+                            <div id="yg">预告片</div>
+                            <div id="ys">预售</div>
+                            <div id="sy">5月27日上映</div>
+                        </button>
+                        
+                    </div> 
+                </div>
+            </div>
+            <div class="lcontent3">
+                <h3>热播电影</h3>
+                <div class="list">
+                <span><a href="#">爱情</a></span>
+                <span><a href="#">喜剧</a></span>
+                <span><a href="#">动作</a></span>
+                <span><a href="#">恐怖</a></span>
+                <span><a href="#">动画</a></span>
+                </div>
+                <div class="imm">
+                    <div class="movis" id="big" >
+                        <img src="../static/image/01.png" alt="" style="width: 43.5%;height: 200px;">
+                        <span>你好李焕英</span>
+                        <div id="pf">7.9</div>
+                        
+                    </div>
+                    
+                    <div class="movis">
+                        <img src="../static/image/02.png" alt="">
+                        <span>人潮汹涌</span>
+                        <div id="pf">7.9</div>
+                        
+                    </div>
+                    <div class="movis">
+                        <img src="../static/image/03.png" alt="">
+                        <span>第十一回</span>
+                        <div id="pf">7.9</div>
+                        
+                    </div>
+                    <div class="movis">
+                        <img src="../static/image/04.png" alt="">
+                        <span>唐人街探案3</span>
+                        <div id="pf">7.9</div>
+                       
+                    </div>
+                    <div class="movis">
+                        <img src="../static/image/05.png" alt="">
+                        <span>波斯语课</span>
+                        <div id="pf">7.9</div>
+                        
+                    </div>
+                    <div class="movis">
+                        <img src="../static/image/06.png" alt="">
+                        <span>哥斯拉大战金刚</span>
+                        <div id="pf">7.9</div>
+                        
+                    </div>
+                    <div class="movis">
+                        <img src="../static/image/06.png" alt="">
+                        <span>哥斯拉大战金刚</span>
+                        <div id="pf">7.9</div>
+                        
+                    </div>
+                 </div>   
+            </div>
+            </div>
+        </div>
+        <div class="rcontent">
+            <div class="rcontent1">
+                <h3>
+                    今日票房
+                </h3>
+                <div class="su9">
+                    <img src="../static/image/-01.png" alt="">
+                    <div  id="su1">速度与激情9</div>
+                    <br>
+                    <div id="su2">909.97万</div>
+                </div>
+                <div class="listt1">
+                    <span id="pm">2</span>
+                    <div id="name">悬崖之上</div>
+                    <span id="wan">367.58万</span>
+                </div>
+                <div class="listt2">
+                    <span id="pm">3</span>
+                    <div id="name">悬崖之上</div>
+                    <span id="wan">367.58万</span>
+                </div>
+                <div class="listt3">
+                    <span id="pm">4</span>
+                    <div id="name">悬崖之上</div>
+                    <span id="wan">367.58万</span>
+                </div>
+                <div class="listt4">
+                    <span id="pm">5</span>
+                    <div id="name">悬崖之上</div>
+                    <span id="wan">367.58万</span>
+                </div>
+            </div>
+            <div class="rcontent2">
+                <h3>最受期待</h3>
+                <div class="su9">
+                    <img src="../static/image/-01.png" alt="">
+                    <div  id="su1">速度与激情9</div>
+                    <br>
+                    <div id="su2">909.97人想看</div>
+                </div>
+                <div class="listt1">
+                    <span id="pmm">2</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt2">
+                    <span id="pmm">3</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt3">
+                    <span id="pmm">4</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt4">
+                    <span id="pmm">5</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+            </div>
+            <div class="rcontent3">
+                <h3>Top100</h3>
+                <div class="su9">
+                    <img src="../static/image/-01.png" alt="">
+                    <div  id="su1">速度与激情9</div>
+                    <br>
+                    <div id="su2">909.97人想看</div>
+                </div>
+                <div class="listt1">
+                    <span id="pmm">2</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt2">
+                    <span id="pmm">3</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt3">
+                    <span id="pmmm">4</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt4">
+                    <span id="pmmm">5</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt5">
+                    <span id="pmmm">6</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt6">
+                    <span id="pmmm">7</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt7">
+                    <span id="pmmm">8</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt8">
+                    <span id="pmmm">9</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                <div class="listt9">
+                    <span id="pmmm">10</span>
+                    <div id="namme">悬崖之上</div>
+                    <span id="wann">367.58人想看</span>
+                </div>
+                
+            </div>
+
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
